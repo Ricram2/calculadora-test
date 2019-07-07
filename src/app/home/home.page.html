@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Calculadora
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content id="content">
+  <ion-row id="full">
+
+    <ion-col size="12" size-sm="4">
+    <ion-card>
+      <ion-item>
+        <!--Input Precio Base-->
+        <ion-card-header>Precio Base</ion-card-header>
+        <ion-input type="number" placeholder="Ingrese Precio Base" id="precio_base" #precio_base></ion-input>
+      </ion-item>
+      <ion-row>
+        <!--Button -->
+        <ion-col>
+          <ion-button expand="block" (click)="onClick(precio_base.value)">Calcular</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <p class="notes">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora fugit ratione amet libero corrupti, </p>
+  </ion-col>
+
+
+    <!-- List of results -->
+    <ion-col size="12" size-sm="4">
+      <ion-card>
+        <ion-item>
+          <ion-label>Retefuente:</ion-label>
+          <p>{{retefuente | number}}<p>
+        </ion-item>
+        <ion-item>
+          <ion-label>ReteICA</ion-label>
+          <p>{{reteica | number}}</p>
+        </ion-item>
+        <ion-item>
+          <ion-label>40% Sobre la base</ion-label>
+          <p>{{sobre_la_base_40 | number}}</p>
+        </ion-item>
+        <ion-item>
+          <ion-label>Seguridad Social</ion-label>
+          <p>{{seguridad_social | number}}</p>
+        </ion-item>
+      </ion-card>
+      <p class="notes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam soluta minima error reprehenderit vel a non accusantium consectetur beatae ducimus cumque repellendus sit, possimus reiciendis veniam esse quis porro? </p>
+    </ion-col>
+
+    <!--Total-->
+    <ion-col size="12" size-sm="4" >
+      <ion-card id="total">
+        <ion-item>
+          <ion-row>
+              <p id="big_number">{{total | currency:'COP':'symbol':'1.0'}}</p>
+          </ion-row>
+        </ion-item>
+      </ion-card>
+      <p class="notes">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora fugit ratione amet libero corrupti, </p>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-toolbar>
+    <ion-footer>
+        <ion-toolbar>
+          <div class="footer_text">
+              <p>Developed by</p><a href='http://ricram2.com'>Ricram2</a>
+          </div>
+        </ion-toolbar>
+      </ion-footer>
+</ion-toolbar>
