@@ -1,8 +1,8 @@
 {
   "name": "Calculadora",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Ricram2",
+  "homepage": "https://ricram2.com/",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
