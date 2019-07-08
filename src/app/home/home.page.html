@@ -31,19 +31,19 @@
       <ion-card>
         <ion-item>
           <ion-label>Retefuente:</ion-label>
-          <p>{{retefuente | number}}<p>
+          <p>{{retefuente | currency:'COP':'symbol':'1.2-2'}}<p>
         </ion-item>
         <ion-item>
           <ion-label>ReteICA</ion-label>
-          <p>{{reteica | number}}</p>
+          <p>{{reteica | currency:'COP':'symbol':'1.2-2'}}</p>
         </ion-item>
         <ion-item>
           <ion-label>40% Sobre la base</ion-label>
-          <p>{{sobre_la_base_40 | number}}</p>
+          <p>{{sobre_la_base_40 | currency:'COP':'symbol':'1.2-2'}}</p>
         </ion-item>
         <ion-item>
           <ion-label>Seguridad Social</ion-label>
-          <p>{{seguridad_social | number}}</p>
+          <p>{{seguridad_social | currency:'COP':'symbol':'1.2-2'}}</p>
         </ion-item>
       </ion-card>
       <p class="notes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam soluta minima error reprehenderit vel a non accusantium consectetur beatae ducimus cumque repellendus sit, possimus reiciendis veniam esse quis porro? </p>
@@ -54,7 +54,7 @@
       <ion-card id="total">
         <ion-item>
           <ion-row>
-              <p id="big_number">{{total | currency:'COP':'symbol':'1.0'}}</p>
+              <p id="big_number">{{total | currency:'COP':'symbol':'1.2-2'}}</p>
           </ion-row>
         </ion-item>
       </ion-card>
